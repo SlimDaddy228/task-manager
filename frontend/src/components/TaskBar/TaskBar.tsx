@@ -26,6 +26,7 @@ const TaskBar = observer(() => {
                 {tasks.data.map(({ id, label, taskExecution }) => {
                     return (
                         <TaskItem
+                            key={id}
                             id={id}
                             label = {label}
                             taskExecution = {buildDate(taskExecution)}
