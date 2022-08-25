@@ -1,0 +1,21 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    a {
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-device-width: 480px){
+    .App {
+        flex-direction: column;
+        a {
+            margin-top: 0.5rem;
+        }
+    }
+}

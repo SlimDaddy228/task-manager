@@ -1,0 +1,26 @@
+.task-bar {
+    margin-right: 0.625rem;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    .task-wrapper {
+        margin-top: 0.3rem;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 0.25rem;
+        max-height: 90vh;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-device-width: 480px){
+    .task-bar {
+        margin-bottom: 0.625rem;
+        margin-right: 0;
+        width: 100%;
+        .task-wrapper {
+            max-height: 20rem;
+            overflow: auto;
+            overflow-x: hidden;
+        }
+    }
+}
