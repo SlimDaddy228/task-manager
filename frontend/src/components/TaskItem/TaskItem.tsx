@@ -14,11 +14,11 @@ interface Props {
 const TaskItem = ({id, label, taskExecution, isDone, deleteTask}: Props) => {
     return (
         <div className='task-item'>
-            <div>
-                <span>
+            <div className='info-wrapper'>
+                <div title={label}>
                     {label}
-                </span>
-                <div>
+                </div>
+                <div title={taskExecution}>
                     {taskExecution}
                 </div>
             </div>
